@@ -9,9 +9,9 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+<!--  &lt;!&ndash; Favicons &ndash;&gt;-->
+<!--  <link href="assets/img/favicon.png" rel="icon">-->
+<!--  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">-->
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -57,7 +57,9 @@
       <nav id="navbar" class="nav-menu navbar">
         <ul>
           <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="#Looking for.." class="nav-link scrollto"><i class="bx bx-user"></i> <span>Looking for..</span></a></li>
           <li><a href="#Work Experience" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Work Experience</span></a></li>
+          <li><a href="#Projects" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Projects</span></a></li>
           <li><a href="#Academic Research Experience" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Academic Research Experience</span></a></li>
           <li><a href="#Education" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Education</span></a></li>
           <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
@@ -92,6 +94,22 @@
       </div>
     </section><!-- End About Section -->
 
+    <section id="Looking for.." class="Looking for..">
+      <div class="container">
+        <div class="section-title">
+          <h2>Looking for..</h2>
+          <p> Internship opportunities for Summer 2023 related to the following areas:</p>
+            <ul>
+                <li>Machine Learning</li>
+                <li>Image Processing/Computer Vision</li>
+                <li>Robotics</li>
+                <li>Software Development</li>
+            </ul>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
     <!-- ======= Skills Section ======= -->
     <section id="skills" class="skills section-bg">
       <div class="container">
@@ -110,6 +128,7 @@
         </div>
       </div>
     </section><!-- End Skills Section -->
+
 
     <!-- ======= Work Experience ======= -->
     <section id="Work Experience" class="Work Experience">
@@ -173,7 +192,7 @@
               <h5>August 2022 - May 2024</h5>
               <p><em>North Carolina State University, Raleigh, USA </em></p>
               <h>GPA: 4.0/4.0</h>
-              <h>Coursework:</h>
+              <h6>Coursework:</h6>
               <ul>
                 <li>Neural Networks</li>
                 <li>Design of a Robotic Computer Vision System for Autonomous Operations</li>
@@ -201,6 +220,142 @@
       </div>
       </div>
     </section>
+
+    <section id="Projects" class="Projects">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Projects</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up">
+              <h4>Design of a Robotic Computer Vision System for Autonomous Inspection</h4>
+          <div class="resume-item">
+              <h5>January 2023 - Present</h5>
+              <p><em>NCSU, Raleigh, NC, USA</em></p>
+
+              <ul>
+                <li>Developing the autonomous navigation software components of a Clearpath’s Jackal platform augmented
+                    with an RGB-D sensor using ORB SLAM-3 algorithm, a scene segmentation network, and an object detector for real-time localization
+                    and mapping, detection of objects of interest and obstacles, free space segmentation, and path planning</li>
+                <li>Integrating the software components for navigation in collaboration with the hardware team to create
+                    a robotic system that will navigate autonomously in a construction scene while building a map of the
+                    scene and perform 3D scanning of an object of interest</li>
+              </ul>
+          </div>
+
+          <div class="resume-item">
+              <h4>Blob-Detection</h4>
+              <h5>November 2022 - December 2022</h5>
+              <p><em>NCSU, Raleigh, NC, USA</em></p>
+              Implementation of a scale invariant blob detection algorithm based on the response of the image to Laplacian
+              of Gaussian kernels for the final project of my Course "Digital Imaging Systems"
+              <ul>
+                  <li>Computed scale invariant key points and corresponding region at multiple scales using response of
+                      image towards Laplacian of Gaussian filter</li>
+                  <li>Designed a 3D neighborhood based Non-Maxima suppression algorithm to eliminate overlapping blobs
+                      in the detected key points</li>
+                  <li>Selected among the top 3 projects in the class</li>
+
+                  <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap">
+                      <img src="assets/img/Projects/blob-detection/butterfly/butterfly.jpg" class="img-fluid" alt="">
+                      <div class="portfolio-links">
+                        <a href="assets/img/Projects/blob-detection/butterfly/butterfly.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Original Image"><i class="bx bx-plus"></i></a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                    <div class="portfolio-wrap">
+                      <img src="assets/img/Projects/blob-detection/butterfly/key_points_initial.png" class="img-fluid" alt="">
+                      <div class="portfolio-links">
+                        <a href="assets/img/Projects/blob-detection/butterfly/key_points_initial.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="LoG Response"><i class="bx bx-plus"></i></a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap">
+                      <img src="assets/img/Projects/blob-detection/butterfly/key_points.png" class="img-fluid" alt="">
+                      <div class="portfolio-links">
+                        <a href="assets/img/Projects/blob-detection/butterfly/key_points.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="NMS thresholded response"><i class="bx bx-plus"></i></a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap">
+                      <img src="assets/img/Projects/blob-detection/sunflower/sunflowers.jpg" class="img-fluid" alt="">
+                      <div class="portfolio-links">
+                        <a href="assets/img/Projects/blob-detection/sunflower/sunflowers.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Original Image"><i class="bx bx-plus"></i></a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                    <div class="portfolio-wrap">
+                      <img src="assets/img/Projects/blob-detection/sunflower/key_points_initial.png" class="img-fluid" alt="">
+                      <div class="portfolio-links">
+                        <a href="assets/img/Projects/blob-detection/sunflower/key_points_initial.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="LoG Response"><i class="bx bx-plus"></i></a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap">
+                      <img src="assets/img/Projects/blob-detection/sunflower/key_points.png" class="img-fluid" alt="">
+                      <div class="portfolio-links">
+                        <a href="assets/img/Projects/blob-detection/sunflower/key_points.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="NMS thresholded response"><i class="bx bx-plus"></i></a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap">
+                      <img src="assets/img/Projects/blob-detection/fishes/fishes.jpg" class="img-fluid" alt="">
+                      <div class="portfolio-links">
+                        <a href="assets/img/Projects/blob-detection/fishes/fishes.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Original Image"><i class="bx bx-plus"></i></a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                    <div class="portfolio-wrap">
+                      <img src="assets/img/Projects/blob-detection/fishes/key_points_initial.png" class="img-fluid" alt="">
+                      <div class="portfolio-links">
+                        <a href="assets/img/Projects/blob-detection/fishes/key_points_initial.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="LoG Response"><i class="bx bx-plus"></i></a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap">
+                      <img src="assets/img/Projects/blob-detection/fishes/key_points.png" class="img-fluid" alt="">
+                      <div class="portfolio-links">
+                        <a href="assets/img/Projects/blob-detection/fishes/key_points.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="NMS thresholded response"><i class="bx bx-plus"></i></a>
+                      </div>
+                    </div>
+                  </div>
+
+                  </div>
+
+                  <p>If you want to know the design of the algorithm and results on other images, please see
+                     the project report - <a href="assets/other_files/ECE558_DIS_Project3_Report.pdf" title="pdf"><i class="bx bx-link"></i></a>
+                  </p>
+                  <p>If you want to check the code implementation of the algorithm and test on other images, please check
+                     out the code repository - <a href="https://github.com/Sumukha21/Blob-Detection" title="code repo"><i class="bx bx-link"></i></a>
+                  </p>
+
+              </ul>
+          </div>
+        </div>
+      </div>
+        </div>
+    </section><!-- End Project Section -->
 
 
     <section id="Academic Research Experience" class="Academic Research Experience">
@@ -256,37 +411,7 @@
 
           </div>
 
-          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" required>
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" required>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" required>
-              </div>
-              <div class="form-group">
-                <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-          </div>
-
-        </div>
-
+      </div>
       </div>
     </section><!-- End Contact Section -->
 
