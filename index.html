@@ -8,6 +8,7 @@
 
 <!--  &lt;!&ndash; Favicons &ndash;&gt;-->
   <link href="assets/img/prof_pic2.jpg" rel="icon">
+
 <!--  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">-->
 
     <title style="align">Sumukha Manjunath</title>
@@ -35,6 +36,7 @@
 
   <!-- ======= Mobile nav toggle button ======= -->
   <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+  <link rel="stylesheet" href="styles.css">
 
   <!-- ======= Header ======= -->
   <header id="header">
@@ -102,12 +104,10 @@
       <div class="container">
         <div class="section-title">
           <h2>Looking for..</h2>
-          <p> Internship opportunities for Summer 2023 related to the following areas:</p>
+          <p> Full time opportunities starting Summer 2024 related to the following areas:</p>
             <ul>
                 <li>Machine Learning</li>
                 <li>Image Processing/Computer Vision</li>
-                <li>Robotics</li>
-                <li>Software Development</li>
             </ul>
         </div>
 
@@ -224,12 +224,26 @@
 
         <div class="section-title">
           <h2>Work Experience</h2>
-          <p> Worked on building Computer Vision empowered prototypes and consequent scaling to production in automotive and medical domains</p>
+          <p> Worked on building Computer Vision empowered prototypes and consequent scaling to production in automotive,
+              agriculture and medical domains</p>
         </div>
+
 
         <div class="row">
 <!--          <div class="col-lg-6" data-aos="fade-up">-->
-              <h4>Senior Data Scientist</h4>
+          <h4>Machine Learning Engineer intern</h4>
+          <div class="resume-item">
+              <h5>May 2023 - August 2023</h5>
+              <p><em>Raven Industries, Arizona, United States</em></p>
+              <ul>
+                <li>Literature review on supervised, semi-supervised and unsupervised representation learning approaches
+                    using deep learning algorithms and querying libraries such as faiss, nmslib and Annoy</li>
+                <li>Training of iBOT on millions of images, linear probe evaluation and SSIM based query quality evaluation</li>
+                <li>Design and development of similar image query tool using trained iBOT encoder as backbone</li>
+              </ul>
+          </div>
+
+        <h4>Senior Data Scientist</h4>
           <div class="resume-item">
               <h5>May 2021 - June 2022</h5>
               <p><em>Mphasis, Bangalore, India </em></p>
@@ -280,34 +294,68 @@
             <div class="resume-item">
 
               <h3> 3D Brain Tumor Segmentation</h3>
-              <h5>February 2023 - Present</h5>
+              <h5>February 2023 - April 2023</h5>
               <p><em>NCSU, Raleigh, NC, USA</em></p>
 
                 <ul>
                     <li>Performed data analysis, preprocessing and generation of training, validation and test splits
                         on BRaTS2021 dataset for developing a deep learning based 3D tumor segmentation algorithm</li>
-                    <li>Experimenting with Vnet architecture and exploring the use of attention based feature
+                    <li>Training Vnet architecture and exploration the use of attention based feature
                         extractor using Unetr for 3D brain tumor segmentation</li>
+                    <li>Visualized the predictions and ground truth as interactive cloud points for easy visual analysis </li>
                 </ul>
-                <p>The project is still in development stage. If you want to check the existing code implementation of
-                    the algorithm, please check out the code repository -
+
+                <figure>
+                    <div class="video-container">
+                      <video controls>
+                        <source src="assets/other_files/Predicted_label_visualization.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                      <video controls>
+                        <source src="assets/other_files/Label_Visualization.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                    <div class="caption-container">
+                        <figcaption>Point clouds of Model prediction and ground truth of brain tumor sub-regions</figcaption>
+                    </div>
+                </figure>
+
+
+                 <p> If you want to check the existing code implementation of the algorithm, please check out the code repository -
                     <a href="https://github.com/Sumukha21/Brain_Tumor_segmentaion3D" title="code repo"><i class="bx bx-link"></i></a>
                   </p>
             </div>
 
             <div class="resume-item">
               <h4>Design of a Robotic Computer Vision System for Autonomous Inspection</h4>
-              <h5>January 2023 - Present</h5>
+              <h5>January 2023 - April 2023</h5>
               <p><em>NCSU, Raleigh, NC, USA</em></p>
 
               <ul>
-                <li>Developing the autonomous navigation software components of a Clearpath’s Jackal platform augmented
-                    with an RGB-D sensor using ORB SLAM-3 algorithm, a scene segmentation network, and an object detector for real-time localization
-                    and mapping, detection of objects of interest and obstacles, free space segmentation, and path planning</li>
-                <li>Integrating the software components for navigation in collaboration with the hardware team to create
-                    a robotic system that will navigate autonomously in a construction scene while building a map of the
-                    scene and perform 3D scanning of an object of interest</li>
+                <li>Developed the autonomous navigation software components of a Clearpath’s Jackal platform augmented
+                    with a Zed Camera using RTABMAP algorithm, AMCL for localization and move base for navigation
+                    and obstacle avoidance</li>
+                <li>Established real time communication with the Robotic Arm team using ROS-melodic packages to create
+                    a robotic system that will navigate autonomously in a construction scene for autonomous navigation
+                    and 3D scanning of an object of interest</li>
               </ul>
+
+                <figure>
+                    <div>
+                      <video controls>
+                        <source src="assets/other_files/Navigation and communication demo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                </figure>
+
+                <p> Project report can be found here:
+                    <a href="assets/other_files/Final_Report_UGVB.pdf" title="Project report"><i class="bx bx-link"></i></a>
+                </p>
+                <p> If you want to check the existing code implementation of the robotic system, please check out the code repository -
+                    <a href="https://github.com/CVAutoNav/UGV-B" title="code repo"><i class="bx bx-link"></i></a>
+                  </p>
           </div>
 
           <div class="resume-item">
@@ -317,17 +365,18 @@
               Implementation of a scale invariant blob detection algorithm based on the response of the image to Laplacian
               of Gaussian kernels for the final project of my Course "Digital Imaging Systems"
               <ul>
-                  <li>Computed scale invariant key points and corresponding region at multiple scales using response of
-                      image towards Laplacian of Gaussian filter</li>
-                  <li>Designed a 3D neighborhood based Non-Maxima suppression algorithm to eliminate overlapping blobs
-                      in the detected key points</li>
-                  <li>Selected among the top 3 projects in the class</li>
+                <li>Computed scale invariant key points and corresponding region at multiple scales using response of
+                  image towards Laplacian of Gaussian filter</li>
+                <li>Designed a 3D neighborhood based Non-Maxima suppression algorithm to eliminate overlapping blobs
+                  in the detected key points</li>
+                <li>Selected among the top 3 projects in the class</li>
+              </ul>
 
-                  <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+                <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
 
                   <div class="col-lg-4 col-md-6 portfolio-item filter-app">
                     <div class="portfolio-wrap">
-                      <img src="assets/img/Projects/blob-detection/butterfly/butterfly.jpg" class="img-fluid" alt="">
+                      <img src="assets/img/Projects/blob-detection/butterfly/butterfly.jpg" class="img-fluid portfolio-image" alt="">
                       <div class="portfolio-links">
                         <a href="assets/img/Projects/blob-detection/butterfly/butterfly.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Original Image"><i class="bx bx-plus"></i></a>
                       </div>
@@ -336,7 +385,7 @@
 
                   <div class="col-lg-4 col-md-6 portfolio-item filter-web">
                     <div class="portfolio-wrap">
-                      <img src="assets/img/Projects/blob-detection/butterfly/key_points_initial.png" class="img-fluid" alt="">
+                      <img src="assets/img/Projects/blob-detection/butterfly/key_points_initial.png" class="img-fluid portfolio-image" alt="">
                       <div class="portfolio-links">
                         <a href="assets/img/Projects/blob-detection/butterfly/key_points_initial.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="LoG Response"><i class="bx bx-plus"></i></a>
                       </div>
@@ -345,7 +394,7 @@
 
                   <div class="col-lg-4 col-md-6 portfolio-item filter-app">
                     <div class="portfolio-wrap">
-                      <img src="assets/img/Projects/blob-detection/butterfly/key_points.png" class="img-fluid" alt="">
+                      <img src="assets/img/Projects/blob-detection/butterfly/key_points.png" class="img-fluid portfolio-image" alt="">
                       <div class="portfolio-links">
                         <a href="assets/img/Projects/blob-detection/butterfly/key_points.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="NMS thresholded response"><i class="bx bx-plus"></i></a>
                       </div>
@@ -354,7 +403,7 @@
 
                   <div class="col-lg-4 col-md-6 portfolio-item filter-app">
                     <div class="portfolio-wrap">
-                      <img src="assets/img/Projects/blob-detection/sunflower/sunflowers.jpg" class="img-fluid" alt="">
+                      <img src="assets/img/Projects/blob-detection/sunflower/sunflowers.jpg" class="img-fluid portfolio-image" alt="">
                       <div class="portfolio-links">
                         <a href="assets/img/Projects/blob-detection/sunflower/sunflowers.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Original Image"><i class="bx bx-plus"></i></a>
                       </div>
@@ -363,60 +412,12 @@
 
                   <div class="col-lg-4 col-md-6 portfolio-item filter-web">
                     <div class="portfolio-wrap">
-                      <img src="assets/img/Projects/blob-detection/sunflower/key_points_initial.png" class="img-fluid" alt="">
-                      <div class="portfolio-links">
-                        <a href="assets/img/Projects/blob-detection/sunflower/key_points_initial.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="LoG Response"><i class="bx bx-plus"></i></a>
-                      </div>
+                      <img src="assets/img/Projects/blob-detection/sunflower/key_points_initial.png" class="img-fluid portfolio-image" alt="">
                     </div>
                   </div>
+                </div>
+              </div>
 
-                  <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                    <div class="portfolio-wrap">
-                      <img src="assets/img/Projects/blob-detection/sunflower/key_points.png" class="img-fluid" alt="">
-                      <div class="portfolio-links">
-                        <a href="assets/img/Projects/blob-detection/sunflower/key_points.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="NMS thresholded response"><i class="bx bx-plus"></i></a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                    <div class="portfolio-wrap">
-                      <img src="assets/img/Projects/blob-detection/fishes/fishes.jpg" class="img-fluid" alt="">
-                      <div class="portfolio-links">
-                        <a href="assets/img/Projects/blob-detection/fishes/fishes.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Original Image"><i class="bx bx-plus"></i></a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                    <div class="portfolio-wrap">
-                      <img src="assets/img/Projects/blob-detection/fishes/key_points_initial.png" class="img-fluid" alt="">
-                      <div class="portfolio-links">
-                        <a href="assets/img/Projects/blob-detection/fishes/key_points_initial.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="LoG Response"><i class="bx bx-plus"></i></a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                    <div class="portfolio-wrap">
-                      <img src="assets/img/Projects/blob-detection/fishes/key_points.png" class="img-fluid" alt="">
-                      <div class="portfolio-links">
-                        <a href="assets/img/Projects/blob-detection/fishes/key_points.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="NMS thresholded response"><i class="bx bx-plus"></i></a>
-                      </div>
-                    </div>
-                  </div>
-
-                  </div>
-
-                  <p>If you want to know the design of the algorithm and results on other images, please see
-                     the project report - <a href="assets/other_files/ECE558_DIS_Project3_Report.pdf" title="pdf"><i class="bx bx-link"></i></a>
-                  </p>
-                  <p>If you want to check the code implementation of the algorithm and test on other images, please check
-                     out the code repository - <a href="https://github.com/Sumukha21/Blob-Detection" title="code repo"><i class="bx bx-link"></i></a>
-                  </p>
-
-              </ul>
-          </div>
 
               <div class="resume-item">
               <h4>Simulation, Transformation and Convergence of Random Variables</h4>
@@ -461,8 +462,6 @@
                     </div>
                   </div>
 
-
-                  </div>
 
                   <p>If you want to know more about the findings of the project please see
                      the project report - <a href="assets/other_files/ECE_514_Project_Report_git.pdf" title="pdf"><i
