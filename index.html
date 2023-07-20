@@ -91,10 +91,13 @@
         <div class="section-title">
           <h2>About</h2>
           <p>Hey reader, thanks for visiting my website. I am currently a Graduate Student at NCSU with a
-             specialization in Machine Learning and Robotics with prior industry experience in developing and
+             specialization in Machine Learning with prior industry experience in developing and
              deploying Computer Vision Algorithms for Automotive and Medical domains. I am curious about the human brain,
              and have a passion for signal processing and coding. Merging the two led me towards exploring artificial intelligence
-             algorithms to replicate and go beyond the human visual cortex. </p>
+             algorithms to replicate and go beyond the human visual cortex. I have experience involving collaborative
+             engagements with experts in the automotive, healthcare, and agricultural industries with the goal of integrating
+             Machine learning to enable data driven decisions to improve vehicle safety and autonomy, medical outcomes
+             and patient experiences, and for precision agriculture to optimize crop yield.</p>
         </div>
 
       </div>
@@ -107,7 +110,6 @@
           <p> Full time opportunities starting Summer 2024 related to the following areas:</p>
             <ul>
                 <li>Machine Learning</li>
-                <li>Image Processing/Computer Vision</li>
             </ul>
         </div>
 
@@ -124,9 +126,10 @@
 <!--        <div class="row skills-content">-->
             <ul>
                 <li>Programming Languages: Python, C++, MATLAB</li>
-                <li>Database and deployment tools: SQL, Docker, Azure Services, Pyspark</li>
-                <li>Libraries: TensorFlow, Keras, PyTorch, NumPy, Pandas, Matplotlib, Flask, FastAPI, OpenCV, seaborn, sklearn, ROS Melodic</li>
-                <li>Algorithm types: Object Detection, Classification, Semantic Segmentation, Image Query, Regression, SLAM</li>
+                <li>Database and deployment tools: SQL, Docker, Azure Services, AWS Services, Kubernetes</li>
+                <li>Libraries: HuggingFace, TensorFlow, Keras, PyTorch, NumPy, Pandas, Matplotlib, Flask, FastAPI, OpenCV, seaborn, sklearn, ROS Melodic</li>
+                <li>Algorithm types: Convolutional Neural Network, Transformer, Recurrent Neural Network, Multilayer Perceptron, Diffusion Models</li>
+                <li>Applications: Query Tool, Object Detection, Object Classification, Semantic Segmentation, Data Curation, SLAM, 3D modelling using Neural Radiance Field</li>
             </ul>
 
 <!--        </div>-->
@@ -170,12 +173,14 @@
               <h>GPA: 4.0/4.0</h>
               <h6>Coursework:</h6>
               <ul>
+                <li>Computer Vision</li>
                 <li>Neural Networks</li>
+                <li>Pattern Recognition</li>
                 <li>Design of a Robotic Computer Vision System for Autonomous Operations</li>
                 <li>Digital Imaging Systems</li>
                 <li>Design and Analysis of Algorithms</li>
                 <li>Random Processes</li>
-                <li>Individual Topic Study in EE</li>
+                <li>Neural Interface Engineering</li>
               </ul>
           </div>
 
@@ -203,13 +208,13 @@
           <h2>Academic Research Experience</h2>
           <h3> Independent Study</h3>
         <div class="resume-item">
-          <h5>January 2023 - Present</h5>
+          <h5>January 2023 - May 2023</h5>
             <ul>
                 <li>Literature survey and analysis of large foundation models such as CLIP and their
-                    application for downstream transfer learning tasks such as Classification, Segmentation
-                    and Object Detection</li>
-                <li>Working on fine-tuning methodology for Contrastive Language Image Pretraining (CLIP) and
-                    similar large foundation models while maintaining the Out of Distribution performance</li>
+                    application for downstream transfer learning tasks such as Classification, Segmentation, 
+                    Object Detection, and manipulating Neural Radiance Fields (NERF)</li>
+                <li>Hypothesized and experiemnted fine-tuning methodology of pre-trained Contrastive Language Image
+                    Pretraining (CLIP) model, with a key focus on preserving out-of-distribution (OOD) performance.</li>
             </ul>
 
         </div>
@@ -233,46 +238,48 @@
 <!--          <div class="col-lg-6" data-aos="fade-up">-->
           <h4>Machine Learning Engineer intern</h4>
           <div class="resume-item">
-              <h5>May 2023 - August 2023</h5>
+              <h5>May 2023 - Present</h5>
               <p><em>Raven Industries, Arizona, United States</em></p>
-              <ul>
-                <li>Literature review on supervised, semi-supervised and unsupervised representation learning approaches
-                    using deep learning algorithms and querying libraries such as faiss, nmslib and Annoy</li>
-                <li>Training of iBOT on millions of images, linear probe evaluation and SSIM based query quality evaluation</li>
-                <li>Design and development of similar image query tool using trained iBOT encoder as backbone</li>
-              </ul>
+              <p>
+                  Data curation is an important step in any machine learning project. As the amount of data acquired scales,
+              manual curation of data becomes impractical. The goal of my internship was to build a similar images query
+              tool that can provide images from unlabled dataset similar to a query image. This not only helped in
+              curation of data to start training but also to further improve existing models by enabling hard example
+              mining. In addition to simple neighbor search, the attention weights of the ViT/B-16 model which was used
+              the learn the representations was utilized to enable more granular searches.
+                  Curerntly, I am working on building an image2image diffusion model based data augmentation pipeline.
+              </p>
+
           </div>
+
 
         <h4>Senior Data Scientist</h4>
           <div class="resume-item">
               <h5>May 2021 - June 2022</h5>
               <p><em>Mphasis, Bangalore, India </em></p>
-              <ul>
-                <li>Facilitated prospective studies to automate disease prediction and treatment effectiveness prediction by developing
-                    deep learning algorithms to learn from images and clinical data associated with ophthalmology patients</li>
-                <li>Enabled real-time predictions from multiple deep learning algorithms by developing a cloud-based modular,
-                    configurable inference pipeline using TensorFlow, FastAPI, docker, and Azure cloud Services</li>
-              </ul>
+                <p>
+                    I worked on training deep learning algorithms for diagnosing various kinds of pathologies in the
+                    human eye ranging from diabetic retinopathy to age related macular degeneration using medical
+                    imaging data such as Fundus and OCT. I contributed towards building a pipeline using the trained
+                    algorithms to give a comprehensive diagnosis of patients. I also got the chance to work on a tough
+                    problem of predicting the effectiveness of treatment for patients suffering from specific ailments.
+                    I was lucky enough to work with Retina specialists to understand the various parameters which
+                    contribute to these pathologies which played a vital role in model development.
+                </p>
           </div>
 
           <div class="resume-item">
               <h4>Senior Software Engineer</h4>
               <h5>August 2018 - May 2021</h5>
               <p><em>Robert Bosch, Bangalore, India</em></p>
-              <ul>
-                <li>Trained FasterRCNN for road sign detection with an F1-score of 84 percent as a component of ADAS application</li>
-                <li>Replaced the process of manual screening of images for data selection for object detection training by developing a
-                    SimCLR self-supervision algorithm backed Image Query tool</li>
-                <li>Improved the overall performance of the FasterRCNN road sign detector by 12 percent by using images selected from
-                    the Image Query tool</li>
-                <li>Improved the harvest planning of a large-scale blueberry farm by developing a Unet inspired multitask CNN for real
-                    time multi-stage berry localization with IoU 91 percent and count estimation with accuracy of 88 percent for a yield
-                    estimation tool replacing the manual estimation with average accuracy of 80 percent</li>
-                <li>Augmented the data capture process for berry yield prediction project by generating notifications for noisy image
-                    captures using a Siamese network with an F1-score of 94 percent for identification of noisy images</li>
-                <li>Reduced the cost, effort and time associated with labeling all available data by designing machine learning algorithms
-                    to select effective data subsets or examples for road scene segmentation algorithm training for ADAS component</li>
-              </ul>
+              <p>
+                This was my first job out of college and was a wonderful learning experience of training algorithms for
+                real world challenges. I got the opportunity to work on semantic segmentation, object detection and
+                self supervised representation learning for components of Advanced Driver Assistance Systems (ADAS)
+                to improve driver safet and experience.
+                I also got to be part of a new venture of Bosch into agricultural domain with the purpose of utilizing
+                machine learning to optimize the planning and harvest estimation in large scale farms.
+              </p>
           </div>
 <!--        </div>-->
       </div>
@@ -289,9 +296,32 @@
         </div>
 
         <div class="row">
-<!--          <div class="col-lg-6" data-aos="fade-up">-->
 
             <div class="resume-item">
+
+              <h3> FashionXchange</h3>
+              <h5>January 2024 - Present</h5>
+              <p><em>NCSU, Raleigh, NC, USA</em></p>
+
+                <ul>
+                    Have you ever had a photo where you wanted to change your outfit to 
+                    either match the occation or background or just to maybe look more glamarous? Well,
+                    now you can with FashionXchange application (Just a few more days of waiting..)
+                </ul>
+                <ul>
+                    Current Status:
+                    <li>Finetuning Stable Diffusion inpainting model with Fashion datasets for more accurate and photorealistic outfit changes</li>
+                    <li>Ovrall pipeline for application using Stable Diffusion, Grounding DINO and Segment Anything Model is being developed for 
+                      fast outfit changes in user photos</li>
+                </ul>
+
+                <p> If you want to check the current application status, please check out the code repository -
+                    <a href="https://github.com/Sumukha21/FashionXchange" title="code repo"><i class="bx bx-link"></i></a>
+                  </p>
+            </div>
+
+
+        <div class="resume-item">
 
               <h3> 3D Brain Tumor Segmentation</h3>
               <h5>February 2023 - April 2023</h5>
@@ -333,9 +363,8 @@
               <p><em>NCSU, Raleigh, NC, USA</em></p>
 
               <ul>
-                <li>Developed the autonomous navigation software components of a Clearpath’s Jackal platform augmented
-                    with a Zed Camera using RTABMAP algorithm, AMCL for localization and move base for navigation
-                    and obstacle avoidance</li>
+                <li>Developed autonomous navigation software for Clearpath’s Jackal platform with an RGB-D sensor,
+                    integrating Rtabmap algorithm, move base and Yolov7 object detector for effective path planning and navigation.</li>
                 <li>Established real time communication with the Robotic Arm team using ROS-melodic packages to create
                     a robotic system that will navigate autonomously in a construction scene for autonomous navigation
                     and 3D scanning of an object of interest</li>
