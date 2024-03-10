@@ -393,6 +393,27 @@ section .container {
   color: #1c7d32;
 }
 
+.about-me .row {
+  display: flex;
+}
+
+.about-me .col-lg-4 {
+  flex: 0 0 auto; /* Set the column to not grow or shrink */
+  width: auto; /* Allow the column to adjust its width based on content */
+}
+
+.about-me .col-lg-8 {
+  flex: 1; /* Make the column grow to fill the remaining space */
+}
+
+.about-me .icon-box {
+  text-align: center;
+  background: #09203a;
+  padding: 1px 1px;
+  transition: all ease-in-out 0.3s;
+  margin: 1px; 
+}
+
 .about-me .content ul {
   list-style: none;
   padding: 0;
