@@ -15,7 +15,7 @@ body {
   background: transparent;
 }
 
-body::before {
+/* body::before {
   content: "";
   position: fixed;
   background: #282c2e;
@@ -24,7 +24,20 @@ body::before {
   right: 0;
   top: 0;
   height: 100vh;
+} */
+
+body::before {
+  content: "";
+  position: fixed;
+  /* background: linear-gradient(to bottom, #b3b3ff, #2196F3); Example gradient */
+  background: url('../gifs/background.gif');
+  background-size: cover;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100vh;
 }
+
 
 @media (min-width: 1024px) {
   body::before {
