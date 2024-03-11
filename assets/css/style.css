@@ -1137,3 +1137,12 @@ section .container {
   }
 }
 
+/* -------------------------------------------------------------------------------
+Vector Images
+------------------------------------------------------------------------------- */
+
+.vector-image {
+  width: 100px; /* Set the width */
+  height: 100px; /* Set the height */
+  margin-right: 10px; /* Add margin between consecutive images */
+}
