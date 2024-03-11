@@ -163,8 +163,14 @@ h1, h2, h3, h4, h5, h6 {
   list-style: none;
 }
 
-.nav-menu li + li {
+/* .nav-menu li + li {
   margin-left: 30px;
+} */
+
+.nav-menu li a {
+  background-color: rgba(15, 12, 12, 0.344); /* Set background color to white */
+  padding: 10px 20px; /* Add padding to create space around the text */
+  border-radius: 5px; /* Optional: Add rounded corners for a nicer look */
 }
 
 .nav-menu a {
