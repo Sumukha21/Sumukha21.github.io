@@ -1109,3 +1109,43 @@ section .container {
     transform: translateX(-50%);
   }
 }
+
+/* ------------------------------------------------------------------
+# Images
+---------------------------------------------------------------------*/
+
+.images-container {
+  display: flex;
+  justify-content: space-between; /* Ensure space between images */
+}
+
+.image-wrapper {
+  flex: 1;
+}
+
+.image-wrapper img {
+  width: 100%; /* Ensure image fills its container */
+}
+
+.image-wrapper p {
+  text-align: center; /* Center align the text */
+  margin-top: 10px; /* Add some space between image and text */
+}
+
+
+/* --------------------------------------------------------------------- */
+/* # Videos
+------------------------------------------------------------------------ */
+
+.videos-container {
+  display: flex; /* Use flexbox layout */
+  justify-content: space-between; /* Distribute items evenly along the main axis */
+}
+
+.video-wrapper {
+  flex: 1; /* Allow videos to grow and shrink as needed */
+}
+
+.video-wrapper video {
+  display: block; /* Ensure video fills its container */
+}
