@@ -409,9 +409,9 @@ section .container {
 .about-me .icon-box {
   text-align: center;
   background: #09203a;
-  padding: 1px 1px;
+  padding: 3px 3px;
   transition: all ease-in-out 0.3s;
-  margin: 1px; 
+  margin: 5px; 
 }
 
 .about-me .content ul {
