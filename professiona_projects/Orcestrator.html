@@ -2,7 +2,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
   
-    <title>Visual Query Tool (Image Recommendation Engine):</title>
+    <title>Model evaluation and deployment orchestrator:</title>
     <meta content="" name="descriptison">
     <meta content="" name="keywords">
   
@@ -43,49 +43,45 @@
 
         <div class="col-lg-12 portfolio-info">
           <br>
-          <h2 style="color:#12d640">Visual Query Tool (Image Recommendation Engine):</h2>
+          <h2 style="color:#12d640">Model evaluation and deployment orchestrator:</h2>
           
           
             <h3>Objective:</h3> 
                 <p>
-                    One of the main challenges in training or fine-tuning deep learning models is data curation from large datasets containing millions of images.
-                    Traditional statistical metrics like Structural Similarity Index (SSIM) can replace manual curation but may not capture implicit image features.
-                    In this project, I developed a similar image search tool by training a Vision Transformer for representation learning.
+                    Evluation pipeline of a deep learning model usually has a lot of reusable components. 
+                    For example, for any object detection model, the way you compute metrics would remain
+                    the same irrespective of the model you use or dataset you are evaluating the model on.
+                    Having a plug and run type of evaluation framework would save Machine Learning Scientists anf Engineers a ton of time by
+                    automating the design, orchestration and logging of the results. 
+                    In this project, I developed an orchestration library using a Directed Acyclic Graph (DAG) data structure. This library allowed
+                    the user to design pipelines using configuration files like yaml and automating the execution and monitoring of the pipeline. 
+                    The use of the library was extended beyond single model evaulation for use cases like multi-model multi-dataset performance summary
+                    and automated CI/CD of evaluated models.
                 </p>
             
             <h3>Contributions:</h3> 
             <ul style="text-align:left;">
                 <li>
-                Trained a Vision Transformer with ~1M images in a self supervision setting using view invariance and masked-image-modelling objectives.
+                Developed a python library for design and orchestration of data pipelines using DAG data structure.
                 </li>
                 <li>
-                Setup distributed training on DGX cluster to enable training on multi-gpu DGX cluster.
+                Adding state saver and logging facilities to automatically keep track of pipeline runs and restart failed data pipeline runs.
                 </li>
                 <li>
-                Developed a feature extraction pipeline using the trainied Vision Transformer and deployed it as on AWS as a Lambda function.  
+                Added generic code blocks and adaptors for dataset loader, summary generator, model evaulation and CI/CD.
                 </li>
-                <li>
-                Automated the extraction of ~60M images using the deployed feature extraction pipeline to store representations in parquet files and DynamoDB.
-                </li>
-                <li>
-                Developed a REST API based Neighbor Search Tool allowing users to query for similar images in a database given a query image. 
-                </li>
-                <li>
-                Designed a novel methodology to allow similar image search based on multiple images and multiple objects in the images using transformer model attention maps.
-                This method allowed the user to search for specific attributes of  objects from one or more images. For example, you could specifically search for a person in the shadow of a tractor. 
-                </li>
-            </ul>
+              </ul>
         
             <h3>Result:</h3> 
                 <ul style="text-align:left;">
-                <li>This replaced the SSIM based approach for searching similar images which accelerated the process of data curation by 80% (conservative).</li>
-                <li>The novel method allowed fine-grained similar image search helping curate data for rare failure cases.</li>
-                <li>Application for a patent for the novel methodology for fine-grained similar image search.</li> 
+                <li>Reduced deep learning model evaluation and CI/CD pipeline design time by 90%.</li>
+                <li>Facilitated comparison of evaluation metrics of multiple models on multiple datasets.</li>
+                <li>Facilitated automated unit testing and CI/CD of models to production environment.</li> 
                 </ul>
         
             
             <h3>Technology used:</h3> 
-             Python, PyTorch, AWS Lambda, AWS S3, AWS DynamoDB, Docker, Facebook AI Similarity Search (FAISS), MLFlow, Git.
+              Python, PyTorch, Git Workflows.
             
           
 

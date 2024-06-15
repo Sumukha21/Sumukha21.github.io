@@ -2,7 +2,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
   
-    <title>Visual Query Tool (Image Recommendation Engine):</title>
+    <title>Generative-AI data augmentation:</title>
     <meta content="" name="descriptison">
     <meta content="" name="keywords">
   
@@ -43,49 +43,36 @@
 
         <div class="col-lg-12 portfolio-info">
           <br>
-          <h2 style="color:#12d640">Visual Query Tool (Image Recommendation Engine):</h2>
+          <h2 style="color:#12d640">Generative-AI data augmentation:</h2>
           
           
             <h3>Objective:</h3> 
                 <p>
-                    One of the main challenges in training or fine-tuning deep learning models is data curation from large datasets containing millions of images.
-                    Traditional statistical metrics like Structural Similarity Index (SSIM) can replace manual curation but may not capture implicit image features.
-                    In this project, I developed a similar image search tool by training a Vision Transformer for representation learning.
+                    The Visual Query Tool solved the problem of manual data curation by automating it. But another problem arises
+                    when you dont have data in your database similar to your query. To address this, I developed a Diffusion model based 
+                    data augmentation pipeline to generate images similar to the query.
                 </p>
             
             <h3>Contributions:</h3> 
             <ul style="text-align:left;">
                 <li>
-                Trained a Vision Transformer with ~1M images in a self supervision setting using view invariance and masked-image-modelling objectives.
+                Trained an image2image diffusion model using Adobe affordance insertion method (<a href="https://github.com/adobe-research/affordance-insertion">(Affordance Insertion)</a>) 
+                for image prompt based inpainting.
                 </li>
                 <li>
-                Setup distributed training on DGX cluster to enable training on multi-gpu DGX cluster.
+                Generated new images for training YoloNAS model on failure cases with less representation in the dataset.
                 </li>
-                <li>
-                Developed a feature extraction pipeline using the trainied Vision Transformer and deployed it as on AWS as a Lambda function.  
-                </li>
-                <li>
-                Automated the extraction of ~60M images using the deployed feature extraction pipeline to store representations in parquet files and DynamoDB.
-                </li>
-                <li>
-                Developed a REST API based Neighbor Search Tool allowing users to query for similar images in a database given a query image. 
-                </li>
-                <li>
-                Designed a novel methodology to allow similar image search based on multiple images and multiple objects in the images using transformer model attention maps.
-                This method allowed the user to search for specific attributes of  objects from one or more images. For example, you could specifically search for a person in the shadow of a tractor. 
-                </li>
-            </ul>
+              </ul>
         
             <h3>Result:</h3> 
                 <ul style="text-align:left;">
-                <li>This replaced the SSIM based approach for searching similar images which accelerated the process of data curation by 80% (conservative).</li>
-                <li>The novel method allowed fine-grained similar image search helping curate data for rare failure cases.</li>
-                <li>Application for a patent for the novel methodology for fine-grained similar image search.</li> 
+                <li>Developed a method for generating new images using image propmts.</li>
+                <li>Enhanced the YoloNAS model's F1-score for obstacle detection by 18% through fine-tuning with newly generated data.</li> 
                 </ul>
         
             
             <h3>Technology used:</h3> 
-             Python, PyTorch, AWS Lambda, AWS S3, AWS DynamoDB, Docker, Facebook AI Similarity Search (FAISS), MLFlow, Git.
+              Python, HuggingFace, PyTorch Lightning, Super-Gradients.
             
           
 
