@@ -729,7 +729,6 @@
 </div>
 </section> -->
 
-
 <section id="resume" class="services">
   <div class="container">
     <div class="section-title">
@@ -740,7 +739,7 @@
         <p>Unable to display PDF file. <a href="assets/docs/Sumukha Manjunath.pdf">Download</a> instead.</p>
       </object>
       <div id="blur-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(255, 255, 255, 0.8); display: flex; justify-content: center; align-items: center;">
-        <form id="email-form">
+        <form id="email-form" action="https://script.google.com/macros/s/AKfycbz9gmkr2C0-a9eUxoClUef5T7XVh_F2SySuB_ZMQ-LC5vXZwdHxRcn7QFWKaH9lQbjo/exec" method="POST">
           <label for="email">Enter your email to view the resume:</label>
           <input type="email" id="email" name="email" required>
           <button type="submit">Submit</button>
@@ -759,14 +758,31 @@
     const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
 
     if (emailPattern.test(email)) {
-      document.getElementById('resume-pdf').style.filter = 'none';
-      document.getElementById('blur-overlay').style.display = 'none';
+      fetch(event.target.action, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: new URLSearchParams({ email: email }),
+      })
+      .then(response => response.text())
+      .then(data => {
+        if (data === 'Email received') {
+          document.getElementById('resume-pdf').style.filter = 'none';
+          document.getElementById('blur-overlay').style.display = 'none';
+        } else {
+          alert('Error processing request. Please try again.');
+        }
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        alert('Error processing request. Please try again.');
+      });
     } else {
       alert('Please enter a valid email address.');
     }
   });
 </script>
-
 
 
   <!-- Start Contact Section -->
